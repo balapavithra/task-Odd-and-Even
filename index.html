@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Odd and Even number</title>
+</head>
+
+<body>
+    <h1>Odd And Even Numbers in console.log</h1>
+    <script>
+        const x = [23, 4, 53, 74, 65, 97, 68, 40]
+        const y = [32, 41, 5, 87, 49, 15, 26, 58]
+        const number = x.concat(y)
+        const odd = []
+        let sumOdd = 0;
+        const even = []
+        let sumEven = 0;
+        for (let i = 0; i < number.length; i++) {
+            if (number[i] % 2 == 0) {
+                even.push(number[i]);
+                sumEven += number[i];
+            }
+            else {
+                odd.push(number[i])
+                sumOdd += number[i];
+            }
+        }
+        let z = [9,8,7,6,5,4,3]
+        even.sort(function (a, b) { return a - b });
+        odd.sort(function (a, b) { return a - b });
+        console.log("The Even numbers are " + even);
+        console.log("Sum of Even number is " + sumEven);
+        console.log("The Odd numbers are " + odd);
+        console.log("Sum of Odd number is " + sumOdd);
+    </script>
+</body>
+
+</html>
